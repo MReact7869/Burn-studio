@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <nav
+      class="p-3 px-[24%] border-gray-200 rounded bg-gray-50 dark:bg-gray-800 dark:border-gray-700"
+    >
+      <div
+        class="container flex flex-wrap items-center justify-between mx-auto"
+      >
+        <a href="#" class="flex items-center">
+          <img
+            src="https://logodix.com/logo/606176.png"
+            class="h-6 mr-3 sm:h-10"
+            alt="Flowbite Logo"
+          />
+          <span
+            class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
+            >Burnstudio</span
+          >
+        </a>
+        <button
+          data-collapse-toggle="navbar-solid-bg"
+          type="button"
+          class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-solid-bg"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-6 h-6"
+            aria-hidden="true"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
+          <nav class="w-full rounded-md">
+            <ol class="list-reset flex">
+              <li>
+                <a
+                  href="#"
+                  class="text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600"
+                  >portfolio</a
+                >
+              </li>
+              <li>
+                <span class="mx-2 text-neutral-500 dark:text-neutral-400"
+                  >/</span
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600"
+                  >about me</a
+                >
+              </li>
+              <li>
+                <span class="mx-2 text-neutral-500 dark:text-neutral-400"
+                  >/</span
+                >
+              </li>
+              <li class="text-neutral-500 dark:text-neutral-400">contact me</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero -->
+    <div class="text-center bg-gray-50 text-gray-800 py-24 px-6">
+      <h1
+        class="text-2xl md:text-2xl xl:text-3xl font-bold tracking-tight mb-12"
+      >
+        I’m a Graphic / Web Designer based in Philippines<br /><span
+          class="font-medium text-[15px]"
+          >This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
+          velit auctor aliquet. Aenean sollicitudin,<br />
+          lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis
+          sem nibh id elit.
+        </span>
+      </h1>
+      <a
+        class="inline-block px-7 py-3 mr-2 bg-black text-white font-medium text-sm leading-snug uppercase rounded shadow-md"
+        data-mdb-ripple="true"
+        data-mdb-ripple-color="light"
+        href="#!"
+        role="button"
+        >Hire me</a
+      >
+    </div>
+    <!-- cards -->
+    <h1 class="px-[16%] py-6 font-bold text-2xl">My Latest Project</h1>
+    <div class="flex-col sm:flex md:flex-row px-[14%] py-6">
+      <div class="flex justify-center">
+        <div
+          class="block sm:mx-8 my-8 max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700"
+        >
+          <a href="#!">
+            <img
+              class="rounded-t-lg"
+              src="https://tecdn.b-cdn.net/img/new/standard/nature/184.jpg"
+              alt=""
+            />
+          </a>
+          <div class="p-6 text-center">
+            <h5
+              class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50"
+            >
+              1WD.TV Project
+            </h5>
+            <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+              <em> Web Design, Freelancer</em>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <div
+          class="block sm:mx-8 my-8 max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700"
+        >
+          <a href="#!">
+            <img
+              class="rounded-t-lg"
+              src="https://tecdn.b-cdn.net/img/new/standard/nature/184.jpg"
+              alt=""
+            />
+          </a>
+          <div class="p-6 text-center">
+            <h5
+              class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50"
+            >
+              1WD.TV Project
+            </h5>
+            <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+              <em> Web Design, Freelancer</em>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <div
+          class="block sm:mx-8 my-8 max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700"
+        >
+          <a href="#!">
+            <img
+              class="rounded-t-lg"
+              src="https://tecdn.b-cdn.net/img/new/standard/nature/184.jpg"
+              alt=""
+            />
+          </a>
+          <div class="p-6 text-center">
+            <h5
+              class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50"
+            >
+              1WD.TV Project
+            </h5>
+            <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+              <em> Web Design, Freelancer</em>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About -->
+    <div
+      class="flex bg-gray-100 py-8 px-[16%] lg:flex-row flex-col md:gap-14 gap-16 justify-between lg:mt-20 mt-16"
+    >
+      <div class="w-full lg:w-6/12">
+        <h2
+          class="font-bold lg:text-4xl text-3xl lg:leading-9 leading-7 text-gray-800 dark:text-white"
+        >
+          About Me
+        </h2>
+        <p
+          class="font-normal text-base leading-6 text-gray-600 dark:text-gray-200 mt-6 w-full lg:w-10/12 xl:w-9/12"
+        >
+          It is a This is Photoshop's version of Lorem Ipsum. Proin gravida nibh
+          vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum
+          auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+        </p>
+        <p
+          class="font-normal text-base leading-6 text-gray-600 dark:text-gray-200 w-full lg:w-10/12 xl:w-9/12 mt-10"
+        >
+          It is a Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non
+          mauris vitae erat consequat auctor eu in elit. Class aptent taciti
+          sociosqu ad litora torquent per conubia nostra, per inceptos
+          himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus
+          condimentum sit amet a augue.
+        </p>
+      </div>
+      <div class="w-full lg:w-6/12">
+        <h2
+          class="font-bold lg:text-4xl text-3xl lg:leading-9 leading-7 text-gray-800 dark:text-white"
+        >
+          What's New?
+        </h2>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 my-12 lg:gap-12 gap-10"
+        >
+          <!-- Board Card -->
+          <div class="flex p-4 shadow-md">
+            <div class="mr-6 w-full">
+              <img
+                src="https://thumbs.dreamstime.com/b/consultant-presenting-tag-cloud-information-technology-224099191.jpg"
+                alt="board card"
+              />
+            </div>
+            <div class="">
+              <p
+                class="font-semibold lg:text-2xl text-xl lg:leading-6 leading-5 text-gray-800 dark:text-white"
+              >
+                This is Photoshop's version of Lorem Ipsum.
+              </p>
+              <p
+                class="mt-2 font-normal text-base leading-6 text-gray-600 dark:text-gray-200"
+              >
+                <span class="text-red-800">Web Design</span> - January 28, 2013
+                - <span class="text-red-800">Admin</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Press Card -->
+          <div class="flex p-4 shadow-md">
+            <div class="mr-6 w-full">
+              <img
+                src="https://thumbs.dreamstime.com/b/consultant-presenting-tag-cloud-information-technology-213450508.jpg"
+                alt="press card"
+              />
+            </div>
+            <div class="">
+              <p
+                class="font-semibold lg:text-2xl text-xl lg:leading-6 leading-5 text-gray-800 dark:text-white"
+              >
+                This is Photoshop's version of Lorem Ipsum.
+              </p>
+              <p
+                class="mt-2 font-normal text-base leading-6 text-gray-600 dark:text-gray-200"
+              >
+                <span class="text-red-800">Web Design</span> - January 28, 2013
+                - <span class="text-red-800">Admin</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+
+    <div class="px-[24%] flex flex-col w-full lg:flex-row">
+      <div
+        class="grid flex-grow h-32 card bg-base-300 rounded-box place-items-center"
+      >
+        <a href="#" class="flex items-center">
+          <span
+            class="self-center mx-4 text-xl font-semibold whitespace-nowrap dark:text-white"
+            >Copyright</span
+          >
+          <span
+            class="self-center text-red-500 text-xl font-semibold whitespace-nowrap dark:text-white"
+            >Burnstudio</span
+          >
+        </a>
+      </div>
+      <div
+        class="grid flex-grow h-32 card bg-base-300 rounded-box place-items-center"
+      >
+        <nav class="w-full rounded-md">
+          <ol class="list-reset flex">
+            <li>
+              <a
+                href="#"
+                class="text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600"
+                >portfolio</a
+              >
+            </li>
+            <li>
+              <span class="mx-2 text-neutral-500 dark:text-neutral-400">/</span>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600"
+                >about me</a
+              >
+            </li>
+            <li>
+              <span class="mx-2 text-neutral-500 dark:text-neutral-400">/</span>
+            </li>
+            <li class="text-neutral-500 dark:text-neutral-400">contact me</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </body>
+</html>
